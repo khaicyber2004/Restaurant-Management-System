@@ -1,0 +1,83 @@
+<footer class="footer-beige-bg border-t border-gold/20 py-20 px-4">
+  <div class="container">
+    <div class="grid md:grid-cols-4 gap-16 mb-16">
+      <!-- Brand -->
+      <div>
+        <h3 class="font-serif text-gold footer-brand-title font-light mb-4 tracking-tight">
+          Masuri Doan
+        </h3>
+        <p class="text-white/60 footer-brand-text font-light">
+          Premium Japanese Sushi House
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="text-white footer-section-title font-serif font-light mb-6 uppercase tracking-wider">
+          Navigation
+        </h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="#" class="text-white/60 hover:text-gold footer-link-text transition-colors font-light">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white/60 hover:text-gold footer-link-text transition-colors font-light">
+              Menu
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white/60 hover:text-gold footer-link-text transition-colors font-light">
+              Reservations
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <h4 class="text-white footer-section-title font-serif font-light mb-6 uppercase tracking-wider">
+          Contact
+        </h4>
+        <ul class="space-y-3">
+          <li class="text-white/60 footer-link-text font-light">
+            +1 (555) 123-4567
+          </li>
+          <li class="text-white/60 footer-link-text font-light">
+            info@masuridoan.com
+          </li>
+          <li class="text-white/60 footer-link-text font-light">
+            Downtown District
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hours -->
+      <div>
+        <h4 class="text-white footer-section-title font-serif font-light mb-6 uppercase tracking-wider">
+          Hours
+        </h4>
+        <ul class="space-y-3">
+          <li class="text-white/60 footer-link-text font-light">
+            Tue - Thu: 5 PM - 10 PM
+          </li>
+          <li class="text-white/60 footer-link-text font-light">
+            Fri - Sat: 5 PM - 11 PM
+          </li>
+          <li class="text-white/60 footer-link-text font-light">
+            Sunday: Closed
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gold/20 pt-10 mt-10">
+      <p class="text-white/40 footer-copyright-text text-center font-light tracking-wider">
+        © 2025 Masuri Doan. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+

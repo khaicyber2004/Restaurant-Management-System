@@ -1,0 +1,3147 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Geist:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Geist', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Font Families */
+.font-serif {
+    font-family: 'Playfair Display', 'Noto Serif JP', serif;
+}
+
+.font-sans {
+    font-family: 'Geist', sans-serif;
+}
+
+/* Layout Utilities */
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.z-100 {
+    z-index: 100;
+}
+
+/* Flexbox & Grid */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+/* Width & Height */
+.w-full {
+    width: 100%;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.w-4 {
+    width: 1rem;
+}
+
+.w-5 {
+    width: 1.25rem;
+}
+
+.w-7 {
+    width: 2.1875rem; /* 25% increase from 1.75rem */
+}
+
+.w-8 {
+    width: 2.5rem; /* 25% increase from 2rem */
+}
+
+.w-14 {
+    width: 4.375rem; /* 25% increase from 3.5rem */
+}
+
+.w-16 {
+    width: 5rem; /* 25% increase from 4rem */
+}
+
+.w-20 {
+    width: 6.25rem; /* 25% increase from 5rem */
+}
+
+.w-24 {
+    width: 7.5rem; /* 25% increase from 6rem */
+}
+
+.w-32 {
+    width: 10rem; /* 25% increase from 8rem */
+}
+
+.h-auto {
+    height: auto;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.h-4 {
+    height: 1rem;
+}
+
+.h-5 {
+    height: 1.25rem;
+}
+
+.h-7 {
+    height: 2.1875rem; /* 25% increase from 1.75rem */
+}
+
+.h-8 {
+    height: 2.5rem; /* 25% increase from 2rem */
+}
+
+.h-12 {
+    height: 3.75rem; /* 25% increase from 3rem */
+}
+
+.h-14 {
+    height: 4.375rem; /* 25% increase from 3.5rem */
+}
+
+.h-80 {
+    height: 25rem; /* 25% increase from 20rem */
+}
+
+.h-96 {
+    height: 30rem; /* 25% increase from 24rem */
+}
+
+.h-px {
+    height: 1px;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.min-h-96 {
+    min-height: 30rem; /* 25% increase from 24rem */
+}
+
+/* Spacing - Scaled up 25% */
+.px-4 {
+    padding-left: 1.25rem; /* 25% increase from 1rem */
+    padding-right: 1.25rem; /* 25% increase from 1rem */
+}
+
+.px-6 {
+    padding-left: 1.875rem; /* 25% increase from 1.5rem */
+    padding-right: 1.875rem; /* 25% increase from 1.5rem */
+}
+
+.px-8 {
+    padding-left: 2.5rem; /* 25% increase from 2rem */
+    padding-right: 2.5rem; /* 25% increase from 2rem */
+}
+
+.px-10 {
+    padding-left: 3.125rem; /* 25% increase from 2.5rem */
+    padding-right: 3.125rem; /* 25% increase from 2.5rem */
+}
+
+.px-12 {
+    padding-left: 3.75rem; /* 25% increase from 3rem */
+    padding-right: 3.75rem; /* 25% increase from 3rem */
+}
+
+.py-2 {
+    padding-top: 0.625rem; /* 25% increase from 0.5rem */
+    padding-bottom: 0.625rem; /* 25% increase from 0.5rem */
+}
+
+.py-4 {
+    padding-top: 1.25rem; /* 25% increase from 1rem */
+    padding-bottom: 1.25rem; /* 25% increase from 1rem */
+}
+
+.py-5 {
+    padding-top: 1.5625rem; /* 25% increase from 1.25rem */
+    padding-bottom: 1.5625rem; /* 25% increase from 1.25rem */
+}
+
+.py-20 {
+    padding-top: 6.25rem; /* 25% increase from 5rem */
+    padding-bottom: 6.25rem; /* 25% increase from 5rem */
+}
+
+.py-32 {
+    padding-top: 10rem; /* 25% increase from 8rem */
+    padding-bottom: 10rem; /* 25% increase from 8rem */
+}
+
+.pt-10 {
+    padding-top: 3.125rem; /* 25% increase from 2.5rem */
+}
+
+.pl-6 {
+    padding-left: 1.875rem; /* 25% increase from 1.5rem */
+}
+
+.mb-4 {
+    margin-bottom: 1.25rem; /* 25% increase from 1rem */
+}
+
+.mb-6 {
+    margin-bottom: 1.875rem; /* 25% increase from 1.5rem */
+}
+
+.mb-8 {
+    margin-bottom: 2.5rem; /* 25% increase from 2rem */
+}
+
+.mb-10 {
+    margin-bottom: 3.125rem; /* 25% increase from 2.5rem */
+}
+
+.mb-12 {
+    margin-bottom: 3.75rem; /* 25% increase from 3rem */
+}
+
+.mb-16 {
+    margin-bottom: 5rem; /* 25% increase from 4rem */
+}
+
+.mb-20 {
+    margin-bottom: 6.25rem; /* 25% increase from 5rem */
+}
+
+.mb-24 {
+    margin-bottom: 7.5rem; /* 25% increase from 6rem */
+}
+
+.mt-8 {
+    margin-top: 2.5rem; /* 25% increase from 2rem */
+}
+
+.mt-10 {
+    margin-top: 3.125rem; /* 25% increase from 2.5rem */
+}
+
+.mt-12 {
+    margin-top: 3.75rem; /* 25% increase from 3rem */
+}
+
+.mt-20 {
+    margin-top: 6.25rem; /* 25% increase from 5rem */
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gaps - Scaled up 25% */
+.gap-2 {
+    gap: 0.625rem; /* 25% increase from 0.5rem */
+}
+
+.gap-3 {
+    gap: 0.9375rem; /* 25% increase from 0.75rem */
+}
+
+.gap-4 {
+    gap: 1.25rem; /* 25% increase from 1rem */
+}
+
+.gap-6 {
+    gap: 1.875rem; /* 25% increase from 1.5rem */
+}
+
+.gap-10 {
+    gap: 3.125rem; /* 25% increase from 2.5rem */
+}
+
+.gap-16 {
+    gap: 5rem; /* 25% increase from 4rem */
+}
+
+.gap-8 {
+    gap: 2.5rem; /* 25% increase from 2rem */
+}
+
+.gap-20 {
+    gap: 6.25rem; /* 25% increase from 5rem */
+}
+
+/* Typography - Scaled up 25% */
+.text-center {
+    text-align: center;
+}
+
+.text-xs {
+    font-size: 0.9375rem; /* 25% increase from 0.75rem */
+    line-height: 1.25rem; /* 25% increase from 1rem */
+}
+
+.text-sm {
+    font-size: 1.09375rem; /* 25% increase from 0.875rem */
+    line-height: 1.5625rem; /* 25% increase from 1.25rem */
+}
+
+.text-base {
+    font-size: 1.25rem; /* 25% increase from 1rem */
+    line-height: 1.875rem; /* 25% increase from 1.5rem */
+}
+
+.text-lg {
+    font-size: 1.40625rem; /* 25% increase from 1.125rem */
+    line-height: 2.1875rem; /* 25% increase from 1.75rem */
+}
+
+.text-xl {
+    font-size: 1.5625rem; /* 25% increase from 1.25rem */
+    line-height: 2.1875rem; /* 25% increase from 1.75rem */
+}
+
+.text-2xl {
+    font-size: 1.875rem; /* 25% increase from 1.5rem */
+    line-height: 2.5rem; /* 25% increase from 2rem */
+}
+
+.text-5xl {
+    font-size: 3.75rem; /* 25% increase from 3rem */
+    line-height: 1;
+}
+
+.text-6xl {
+    font-size: 4.6875rem; /* 25% increase from 3.75rem */
+    line-height: 1;
+}
+
+.text-7xl {
+    font-size: 5.625rem; /* 25% increase from 4.5rem */
+    line-height: 1;
+}
+
+.text-8xl {
+    font-size: 7.5rem; /* 25% increase from 6rem */
+    line-height: 1;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+    letter-spacing: 0.1em;
+}
+
+.tracking-wide {
+    letter-spacing: 0.025em;
+}
+
+.tracking-tight {
+    letter-spacing: -0.025em;
+}
+
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-white\/80 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.text-white\/70 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-white\/60 {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.text-white\/40 {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.text-gold {
+    color: #d7c09a;
+}
+
+[class*="text-gold/50"] {
+    color: rgba(215, 192, 154, 0.5);
+}
+
+[class*="text-gold/30"] {
+    color: rgba(215, 192, 154, 0.3);
+}
+
+/* Gold color variable for easier reference */
+:root {
+    --gold: #d7c09a;
+}
+
+/* Background Colors */
+.bg-black {
+    background-color: #000000;
+}
+
+[class*="bg-black/40"] {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-dark {
+    background-color: #0a0a0a;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-gold {
+    background-color: #d7c09a;
+}
+
+[class*="bg-gold/40"] {
+    background-color: rgba(215, 192, 154, 0.4);
+}
+
+[class*="bg-gold/80"] {
+    background-color: rgba(215, 192, 154, 0.8);
+}
+
+[class*="bg-gold/30"] {
+    background-color: rgba(215, 192, 154, 0.3);
+}
+
+[class*="bg-gold/60"] {
+    background-color: rgba(215, 192, 154, 0.6);
+}
+
+[class*="bg-gold/20"] {
+    background-color: rgba(215, 192, 154, 0.2);
+}
+
+/* Borders */
+.border {
+    border-width: 1px;
+}
+
+.border-t {
+    border-top-width: 1px;
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.border-l {
+    border-left-width: 1px;
+}
+
+.border-gold {
+    border-color: #d7c09a;
+}
+
+[class*="border-gold/40"] {
+    border-color: rgba(215, 192, 154, 0.4);
+}
+
+[class*="border-gold/80"] {
+    border-color: rgba(215, 192, 154, 0.8);
+}
+
+[class*="border-gold/30"] {
+    border-color: rgba(215, 192, 154, 0.3);
+}
+
+[class*="border-gold/60"] {
+    border-color: rgba(215, 192, 154, 0.6);
+}
+
+[class*="border-gold/20"] {
+    border-color: rgba(215, 192, 154, 0.2);
+}
+
+/* Object Fit */
+.object-cover {
+    object-fit: cover;
+}
+
+/* Border Radius */
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* Max Width - Scaled up 25% */
+.max-w-2xl {
+    max-width: 52.5rem; /* 25% increase from 42rem */
+}
+
+.max-w-7xl {
+    max-width: 1600px; /* 25% increase from 1280px */
+}
+
+.max-w-lg {
+    max-width: 40rem; /* 25% increase from 32rem */
+}
+
+.max-h-screen {
+    max-height: 100vh;
+}
+
+/* Display */
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+}
+
+/* Transforms */
+.-translate-x-1\/2 {
+    transform: translateX(-50%);
+}
+
+/* Pointer Events */
+.pointer-events-none {
+    pointer-events: none;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+.space-y-3 > * + * {
+    margin-top: 0.75rem;
+}
+
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+/* Transitions */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.duration-500 {
+    transition-duration: 500ms;
+}
+
+.duration-700 {
+    transition-duration: 700ms;
+}
+
+.duration-1000 {
+    transition-duration: 1000ms;
+}
+
+/* Hover States */
+.hover\:bg-gold:hover {
+    background-color: #d7c09a;
+}
+
+.hover\:text-black:hover {
+    color: #000000;
+}
+
+.hover\:text-gold:hover {
+    color: #d7c09a;
+}
+
+.hover\:text-white:hover {
+    color: #FFFFFF;
+}
+
+[class*="hover:border-gold/80"]:hover {
+    border-color: rgba(215, 192, 154, 0.8);
+}
+
+.hover\:w-full:hover {
+    width: 100%;
+}
+
+.hover\:w-14:hover {
+    width: 3.5rem;
+}
+
+[class*="hover:bg-gold/80"]:hover {
+    background-color: rgba(215, 192, 154, 0.8);
+}
+
+/* Group Hover */
+.group:hover [class*="group-hover:w-full"] {
+    width: 100%;
+}
+
+.group:hover [class*="group-hover:w-14"] {
+    width: 3.5rem;
+}
+
+.group:hover [class*="group-hover:border-gold/80"] {
+    border-color: rgba(215, 192, 154, 0.8);
+}
+
+.group:hover [class*="group-hover:border-gold/60"] {
+    border-color: rgba(215, 192, 154, 0.6);
+}
+
+.group:hover [class*="group-hover:bg-gold/80"] {
+    background-color: rgba(215, 192, 154, 0.8);
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+/* Opacity */
+.opacity-5 {
+    opacity: 0.05;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+/* Hero Section - Scaled up 25% + Extended 15% */
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120.75vh; /* 105vh * 1.15 = 120.75vh (tăng thêm 15%) */
+    margin-top: 0;
+}
+
+.hero-logo-icon {
+    width: 10rem; /* 25% increase from 8rem (w-32) */
+    height: 10rem; /* 25% increase from 8rem (h-32) */
+}
+
+/* Hero Title - 50% larger */
+.hero-title-large {
+    font-size: 7.03125rem; /* 50% increase from 4.6875rem (text-6xl) */
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .hero-title-large {
+        font-size: 8.4375rem; /* 50% increase from 5.625rem (text-7xl) */
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-title-large {
+        font-size: 11.25rem; /* 50% increase from 7.5rem (text-8xl) */
+    }
+}
+
+/* Hero Subtitle - 50% larger */
+.hero-subtitle-large {
+    font-size: 2.34375rem; /* 50% increase from 1.5625rem (text-xl) */
+    line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+    .hero-subtitle-large {
+        font-size: 2.8125rem; /* 50% increase from 1.875rem (text-2xl) */
+        line-height: 2rem;
+    }
+}
+
+.card-content-padding {
+    padding: 2.5rem; /* 25% increase from 2rem (p-8) */
+}
+
+/* Background Image Styles - Extended for parallax */
+.hero-background {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    height: 125%; /* Increased to 125% to allow more parallax movement */
+    object-fit: cover;
+    object-position: center;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+}
+
+/* Radial Gradient Overlay */
+.radial-gradient-overlay {
+    background-image: radial-gradient(ellipse 600px 300px at center, rgba(215, 192, 154, 0.05) 0%, transparent 70%);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+    .sm\:block {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:flex {
+        display: flex;
+    }
+
+    .md\:hidden {
+        display: none;
+    }
+
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .md\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .md\:h-full {
+        height: 100%;
+    }
+
+    .md\:h-screen {
+        height: 100vh;
+    }
+
+    .md\:px-6 {
+        padding-left: 1.875rem; /* 25% increase from 1.5rem */
+        padding-right: 1.875rem; /* 25% increase from 1.5rem */
+    }
+
+    .md\:px-8 {
+        padding-left: 2.5rem; /* 25% increase from 2rem */
+        padding-right: 2.5rem; /* 25% increase from 2rem */
+    }
+
+    .md\:px-12 {
+        padding-left: 3.75rem; /* 25% increase from 3rem */
+        padding-right: 3.75rem; /* 25% increase from 3rem */
+    }
+
+    .md\:text-2xl {
+        font-size: 1.875rem; /* 25% increase from 1.5rem */
+        line-height: 2.5rem; /* 25% increase from 2rem */
+    }
+
+    .md\:text-6xl {
+        font-size: 4.6875rem; /* 25% increase from 3.75rem */
+        line-height: 1;
+    }
+
+    .md\:text-7xl {
+        font-size: 5.625rem; /* 25% increase from 4.5rem */
+        line-height: 1;
+    }
+
+    .md\:text-lg {
+        font-size: 1.40625rem; /* 25% increase from 1.125rem */
+        line-height: 2.1875rem; /* 25% increase from 1.75rem */
+    }
+
+    .md\:text-xl {
+        font-size: 1.5625rem; /* 25% increase from 1.25rem */
+        line-height: 2.1875rem; /* 25% increase from 1.75rem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:flex {
+        display: flex;
+    }
+
+    .lg\:px-8 {
+        padding-left: 2.5rem; /* 25% increase from 2rem */
+        padding-right: 2.5rem; /* 25% increase from 2rem */
+    }
+
+    .lg\:gap-10 {
+        gap: 3.125rem; /* 25% increase from 2.5rem */
+    }
+
+    .lg\:text-8xl {
+        font-size: 7.5rem; /* 25% increase from 6rem */
+        line-height: 1;
+    }
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.open {
+    display: block;
+}
+
+/* SVG Icons */
+.icon-menu,
+.icon-close {
+    width: 27.6px; /* 15% increase from 24px */
+    height: 27.6px; /* 15% increase from 24px */
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+/* Header Styles */
+.header-blur {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    min-height: auto;
+}
+
+.header-nav {
+    padding: 1.725rem 2.3rem; /* 15% increase from 1.5rem 2rem */
+}
+
+.header-container {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-logo {
+    flex-shrink: 0;
+    min-width: fit-content;
+}
+
+.header-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-actions {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.header-actions-gap {
+    gap: 1.15rem; /* 15% increase from 1rem (gap-4) */
+}
+
+/* Header Logo */
+.header-logo-link-gap {
+    gap: 0.75rem; /* Increased gap between logo and text */
+}
+
+.header-logo-img {
+    height: 5rem; /* Increased for larger logo visibility */
+}
+
+.header-logo-text {
+    font-size: 1.875rem; /* 50% increase from 1.25rem */
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .header-logo-text {
+        font-size: 2.25rem; /* 50% increase from 1.5rem */
+    }
+}
+
+/* Header Menu */
+.header-menu-gap {
+    gap: 1.725rem; /* 15% increase from 1.5rem (gap-6) */
+}
+
+@media (min-width: 1024px) {
+    .header-menu-gap {
+        gap: 2.875rem; /* 15% increase from 2.5rem (gap-10) */
+    }
+}
+
+.header-menu-link {
+    font-size: 1.40625rem; /* 50% increase from 0.9375rem */
+    line-height: 2.25rem; /* 50% increase from 1.5rem */
+    font-weight: 300;
+}
+
+/* Header Location */
+.header-location-gap {
+    gap: 0.575rem; /* 15% increase from 0.5rem (gap-2) */
+}
+
+.header-location-text {
+    font-size: 1.40625rem; /* 50% increase from 0.9375rem */
+    line-height: 2.25rem; /* 50% increase from 1.5rem */
+    font-weight: 300;
+}
+
+.header-location-icon {
+    width: 1.25rem; /* Increased icon size */
+    height: 1.25rem; /* Increased icon size */
+}
+
+/* Book Now Button */
+.book-now-btn {
+    background-color: #d7c09a;
+    color: #000000;
+    border: none;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header-book-btn-padding {
+    padding-left: 1.5rem; /* Increased padding for larger button */
+    padding-right: 1.5rem;
+    padding-top: 0.75rem; /* Increased padding for larger button */
+    padding-bottom: 0.75rem;
+}
+
+.header-book-btn-text {
+    font-size: 1.40625rem; /* 50% increase from 0.9375rem */
+    line-height: 2.25rem; /* 50% increase from 1.5rem */
+    font-weight: 400;
+}
+
+.book-now-btn:hover {
+    background-color: #c4a882;
+    color: #000000;
+    transform: translateY(-1px);
+}
+
+/* Header Login Button */
+.header-login-btn {
+    background-color: #d7c09a;
+    color: #000000;
+    border: none;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7px; /* Slightly rounded 6-8px radius */
+}
+
+.header-login-btn:hover {
+    background-color: #c4a882; /* Slightly darker on hover */
+    color: #000000;
+}
+
+@media (max-width: 1023px) {
+    .header-menu {
+        position: static;
+        transform: none;
+    }
+    
+    .header-container {
+        justify-content: space-between;
+    }
+}
+
+.hero-content {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 1000ms, transform 1000ms;
+}
+
+/* Section Spacing - Scaled up 25% */
+.section {
+    padding-top: 10rem; /* 25% increase from 8rem */
+    padding-bottom: 10rem; /* 25% increase from 8rem */
+    padding-left: 1.25rem; /* 25% increase from 1rem */
+    padding-right: 1.25rem; /* 25% increase from 1rem */
+}
+
+/* Container */
+.container {
+    max-width: 1600px; /* 25% increase from 1280px */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Card Styles - Scaled up 25% */
+.card {
+    position: relative;
+    height: 25rem; /* 25% increase from 20rem */
+    width: 100%;
+    overflow: hidden;
+    background-color: #0a0a0a;
+}
+
+.card-border {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(215, 192, 154, 0.4);
+    transition: border-color 500ms;
+}
+
+.card:hover .card-border {
+    border-color: rgba(215, 192, 154, 0.8);
+}
+
+/* Text Balance */
+.text-balance {
+    text-wrap: balance;
+}
+
+/* Footer Styles */
+.footer-beige-bg {
+    background-color: #8b7355; /* Dark beige background like in the image */
+}
+
+/* Footer Typography - 50% larger */
+.footer-brand-title {
+    font-size: 1.6875rem; /* 50% increase from 1.125rem (text-lg) */
+    line-height: 1.75rem;
+}
+
+.footer-brand-text {
+    font-size: 1.09375rem; /* 50% increase from 0.875rem (text-sm) */
+    line-height: 1.875rem;
+}
+
+.footer-section-title {
+    font-size: 0.9375rem; /* 50% increase from 0.75rem (text-xs) */
+    line-height: 1.5rem;
+}
+
+.footer-link-text {
+    font-size: 1.09375rem; /* 50% increase from 0.875rem (text-sm) */
+    line-height: 1.875rem;
+}
+
+.footer-copyright-text {
+    font-size: 0.9375rem; /* 50% increase from 0.75rem (text-xs) */
+    line-height: 1.5rem;
+}
+
+/* Header Mobile Menu - 50% larger */
+.header-mobile-menu-link {
+    font-size: 1.09375rem; /* 50% increase from 0.875rem (text-sm) */
+    line-height: 1.875rem;
+}
+
+/* Login Page Styles */
+.login-page-body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.login-background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px) brightness(0.5);
+    transform: scale(1.1);
+}
+
+.login-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+}
+
+.login-card {
+    background-color: rgba(26, 26, 26, 0.95);
+    border-radius: 0.5rem;
+    padding: 3rem 2.5rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.login-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.login-subtitle {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.login-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.login-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.login-input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    padding: 0.75rem 2.5rem 0.75rem 0;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.login-input:focus {
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+.login-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.login-input-icon {
+    position: absolute;
+    right: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+}
+
+.login-password-toggle {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s ease;
+}
+
+.login-password-toggle:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.login-password-toggle .login-input-icon {
+    pointer-events: auto;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.login-button {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    font-family: inherit;
+}
+
+.login-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.login-button:active {
+    transform: translateY(1px);
+}
+
+.login-forgot-link {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 300;
+}
+
+.login-forgot-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Design for Login */
+@media (max-width: 640px) {
+    .login-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .login-title {
+        font-size: 2rem;
+    }
+
+    .login-subtitle {
+        font-size: 0.75rem;
+    }
+}
+
+/* Find Dish Page Styles */
+.find-dish-hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33vh;
+    min-height: 300px;
+    margin-top: 0;
+}
+
+.find-dish-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.find-dish-hero-content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.find-dish-hero-title {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .find-dish-hero-title {
+        font-size: 5rem;
+    }
+}
+
+.find-dish-hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+    .find-dish-hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+/* Search Section Styles */
+.search-section {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+/* Search Form Styles */
+.search-form {
+    width: 100%;
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid rgba(215, 192, 154, 0.5);
+    color: rgba(215, 192, 154, 0.9);
+    padding: 1.75rem 2.25rem;
+    font-size: 1.40625rem; /* match table text */
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.search-input-with-icon {
+    padding-left: 3.5rem;
+}
+
+.search-input:focus {
+    border-color: rgba(215, 192, 154, 0.8);
+    background-color: #000000;
+}
+
+.search-input::placeholder {
+    color: rgba(215, 192, 154, 0.7);
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(215, 192, 154, 0.7);
+    transition: color 0.3s ease;
+    z-index: 1;
+    height: auto;
+    width: auto;
+}
+
+.search-button-left {
+    left: 1rem;
+}
+
+.search-button:hover {
+    color: rgba(215, 192, 154, 0.9);
+}
+
+.search-icon {
+    width: 0.703125rem;
+    height: 0.703125rem;
+}
+
+.search-instruction {
+    margin-top: 1.5rem;
+    font-size: 1.75rem;
+    color: rgba(215, 192, 154, 0.7);
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+/* Dishes Table Styles */
+.dishes-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.dishes-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.dishes-table thead {
+    background-color: transparent;
+}
+
+.dishes-table th {
+    padding: 3rem 3rem;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.40625rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #d7c09a;
+    border-bottom: 1px solid rgba(215, 192, 154, 0.3);
+}
+
+.dishes-table th:nth-child(3) {
+    text-align: right;
+}
+
+.dishes-table td {
+    padding: 3rem 3rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.40625rem;
+    border-bottom: 1px solid rgba(215, 192, 154, 0.15);
+}
+
+.dishes-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.dishes-table tbody tr.dish-row-clickable {
+    cursor: pointer;
+}
+
+.dishes-table tbody tr:hover {
+    background-color: rgba(215, 192, 154, 0.05);
+    border-left: 2px solid rgba(215, 192, 154, 0.4);
+}
+
+.dishes-table tbody tr.sold-out-row {
+    opacity: 0.6;
+}
+
+.dishes-table tbody tr.sold-out-row:hover {
+    opacity: 0.8;
+}
+
+.dish-name {
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 1.40625rem;
+}
+
+.dish-price {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    font-size: 1.40625rem;
+    text-align: right;
+}
+
+.dish-price.sold-out-price {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dish-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.40625rem;
+    line-height: 1.6;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+    font-weight: 400;
+}
+
+.status-ACTIVE {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status-SOLD_OUT {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+/* Responsive Design for Find Dish */
+@media (max-width: 768px) {
+    .dishes-table-wrapper {
+        overflow-x: scroll;
+    }
+
+    .dishes-table {
+        min-width: 600px;
+    }
+
+    .dishes-table th,
+    .dishes-table td {
+        padding: 0.875rem 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    .find-dish-hero-title {
+        font-size: 3rem;
+    }
+}
+
+/* Dish Detail Page Styles */
+.dish-detail-section {
+    padding-top: 6.25rem;
+    padding-bottom: 8rem;
+    min-height: 80vh;
+}
+
+.dish-detail-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 6.25rem;
+}
+
+.dish-detail-card {
+    background-color: transparent;
+    border: 1px solid rgba(215, 192, 154, 0.5);
+    padding: 4rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.dish-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(215, 192, 154, 0.3);
+}
+
+.dish-detail-title-wrapper {
+    flex: 1;
+}
+
+.dish-detail-name {
+    font-size: 5.25rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.dish-detail-status-wrapper {
+    margin-top: 1rem;
+}
+
+.dish-detail-status-badge {
+    display: inline-block;
+    padding: 0.75rem 1.875rem;
+    font-size: 1.3125rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    font-weight: 400;
+}
+
+.dish-detail-status-badge.status-ACTIVE {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dish-detail-status-badge.status-SOLD_OUT {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.dish-detail-price-wrapper {
+    margin-left: 2rem;
+}
+
+.dish-detail-price {
+    font-size: 5.25rem;
+    font-weight: 300;
+    color: #d7c09a;
+    line-height: 1;
+}
+
+.dish-detail-content-section {
+    margin-bottom: 4.5rem;
+}
+
+.dish-detail-section-title {
+    font-size: 1.3125rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #d7c09a;
+    margin-bottom: 1.5rem;
+}
+
+.dish-detail-text {
+    font-size: 1.6875rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+.dish-detail-footer {
+    margin-top: 4.5rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(215, 192, 154, 0.3);
+}
+
+.dish-detail-id {
+    font-size: 1.3125rem;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.05em;
+}
+
+/* Responsive Design for Dish Detail */
+@media (max-width: 768px) {
+    .dish-detail-wrapper {
+        margin-top: 4rem;
+    }
+
+    .dish-detail-card {
+        padding: 3rem 2.5rem;
+    }
+
+    .dish-detail-header {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .dish-detail-price-wrapper {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .dish-detail-name {
+        font-size: 3.5rem;
+    }
+
+    .dish-detail-price {
+        font-size: 3.5rem;
+    }
+
+    .dish-detail-section-title {
+        font-size: 1rem;
+    }
+
+    .dish-detail-text {
+        font-size: 1.25rem;
+    }
+
+    .dish-detail-status-badge {
+        font-size: 1rem;
+        padding: 0.5rem 1.25rem;
+    }
+
+    .dish-detail-id {
+        font-size: 1rem;
+    }
+}
+
+/* Statistics Page Styles */
+.statistics-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    min-height: 80vh;
+}
+
+.statistics-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.statistics-title-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.statistics-main-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.statistics-subtitle {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.statistics-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.statistics-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #111 0%, #161616 100%);
+    border-radius: 14px;
+    border: 1px solid rgba(215, 192, 154, 0.1);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.statistics-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(215, 192, 154, 0.4);
+    box-shadow: 0 8px 24px rgba(215, 192, 154, 0.15);
+    background: linear-gradient(135deg, #161616 0%, #1a1a1a 100%);
+}
+
+.statistics-card-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    color: #d7c09a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistics-card-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.statistics-card-content {
+    flex: 1;
+}
+
+.statistics-card-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.statistics-card-description {
+    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Responsive Design for Statistics Page */
+@media (max-width: 768px) {
+    .statistics-section {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    .statistics-container {
+        padding: 0 1.5rem;
+    }
+
+    .statistics-main-title {
+        font-size: 2.5rem;
+    }
+
+    .statistics-subtitle {
+        font-size: 1rem;
+    }
+
+    .statistics-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .statistics-card {
+        padding: 1.5rem;
+    }
+
+    .statistics-card-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .statistics-card-title {
+        font-size: 1.125rem;
+    }
+
+    .statistics-card-description {
+        font-size: 0.875rem;
+    }
+}
+
+/* Statistic Page Styles (singular) */
+.statistic-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #000000;
+    overflow: visible;
+    padding: 2rem 0;
+}
+
+.statistic-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.statistic-title-section {
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.statistic-main-title {
+    font-size: 5.25rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.statistic-subtitle {
+    font-size: 1.6875rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.statistic-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.statistic-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.25rem;
+    padding: 36px;
+    background: #111;
+    border-radius: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.statistic-card-clickable {
+    cursor: pointer;
+}
+
+.statistic-card-clickable:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 12px 36px rgba(212, 175, 55, 0.15);
+    background: rgba(17, 17, 17, 0.9);
+}
+
+.statistic-card-icon {
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    color: #d7c09a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistic-card-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.statistic-card-content {
+    flex: 1;
+}
+
+.statistic-card-title {
+    font-size: 27px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.statistic-card-description {
+    font-size: 21px;
+    color: rgba(212, 175, 55, 0.7);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Responsive Design for Statistic Page */
+@media (max-width: 768px) {
+    .statistic-section {
+        min-height: 100vh;
+        padding: 1.5rem 0;
+    }
+
+    .statistic-container {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+
+    .statistic-main-title {
+        font-size: 3.75rem;
+    }
+
+    .statistic-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .statistic-title-section {
+        margin-bottom: 4.5rem;
+    }
+
+    .statistic-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+    }
+
+    .statistic-card {
+        padding: 2.25rem;
+        gap: 1.6875rem;
+    }
+
+    .statistic-card-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .statistic-card-title {
+        font-size: 1.6875rem;
+    }
+
+    .statistic-card-description {
+        font-size: 1.05rem;
+    }
+}
+
+/* Dish Statistics Form Page Styles */
+.dish-statistics-form-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #000000;
+    overflow: visible;
+    padding: 2rem 0;
+}
+
+.dish-statistics-form-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.dish-statistics-form-title-section {
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.dish-statistics-form-main-title {
+    font-size: 5.25rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.dish-statistics-form-subtitle {
+    font-size: 1.6875rem;
+    color: rgba(212, 175, 55, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.dish-statistics-form-card {
+    background: #111;
+    border-radius: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 54px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.dish-statistics-form {
+    width: 100%;
+}
+
+.dish-statistics-form-date-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    margin-bottom: 54px;
+}
+
+.dish-statistics-form-date-group {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.dish-statistics-form-label {
+    font-size: 21px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+}
+
+.dish-statistics-form-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dish-statistics-form-input {
+    width: 100%;
+    padding: 18px 54px 18px 18px;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10.5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Geist', sans-serif;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.dish-statistics-form-input:focus {
+    outline: none;
+    border-color: rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.dish-statistics-form-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.dish-statistics-form-calendar-icon {
+    position: absolute;
+    right: 18px;
+    width: 24px;
+    height: 24px;
+    color: rgba(212, 175, 55, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.dish-statistics-form-calendar-icon:hover {
+    color: rgba(212, 175, 55, 1);
+    transform: scale(1.1);
+}
+
+.dish-statistics-form-button {
+    width: 100%;
+    padding: 24px;
+    background: rgba(212, 175, 55, 0.9);
+    border: none;
+    border-radius: 10.5px;
+    color: #000000;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Geist', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 27px;
+}
+
+.dish-statistics-form-button:hover {
+    background: rgba(212, 175, 55, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+}
+
+.dish-statistics-form-button:active {
+    transform: translateY(0);
+}
+
+.dish-statistics-form-instruction {
+    text-align: center;
+    font-size: 16.5px;
+    color: rgba(212, 175, 55, 0.7);
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Responsive Design for Dish Statistics Form Page */
+@media (max-width: 768px) {
+    .dish-statistics-form-section {
+        min-height: 100vh;
+        padding: 1.5rem 0;
+    }
+
+    .dish-statistics-form-container {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+
+    .dish-statistics-form-main-title {
+        font-size: 3.75rem;
+    }
+
+    .dish-statistics-form-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .dish-statistics-form-title-section {
+        margin-bottom: 4.5rem;
+    }
+
+    .dish-statistics-form-card {
+        padding: 2.25rem;
+    }
+
+    .dish-statistics-form-date-fields {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+        margin-bottom: 2.25rem;
+    }
+
+    .dish-statistics-form-label {
+        font-size: 1.6875rem;
+    }
+
+    .dish-statistics-form-input {
+        padding: 1.35rem 3.375rem 1.35rem 1.35rem;
+        font-size: 1.35rem;
+    }
+
+    .dish-statistics-form-button {
+        padding: 1.8rem;
+        font-size: 1.575rem;
+    }
+
+    .dish-statistics-form-instruction {
+        font-size: 1.2375rem;
+    }
+}
+
+/* Dish Revenue Report Page Styles */
+.dish-revenue-report-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #000000;
+    overflow: visible;
+    padding: 2rem 0;
+}
+
+.dish-revenue-report-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.dish-revenue-report-back-link {
+    display: inline-block;
+    color: rgba(212, 175, 55, 0.7);
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
+    letter-spacing: 0.02em;
+}
+
+.dish-revenue-report-back-link:hover {
+    color: rgba(212, 175, 55, 1);
+    text-decoration: underline;
+}
+
+.dish-revenue-report-title-section {
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.dish-revenue-report-main-title {
+    font-size: 5.25rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.dish-revenue-report-subtitle {
+    font-size: 1.6875rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+.dish-revenue-report-date-range {
+    font-size: 1.5rem;
+    color: rgba(212, 175, 55, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.dish-revenue-report-table-container {
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.dish-revenue-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    border-radius: 21px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dish-revenue-report-table thead {
+    background: rgba(17, 17, 17, 0.8);
+}
+
+.dish-revenue-report-table th {
+    padding: 27px 36px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dish-revenue-report-table th:first-child {
+    padding-left: 54px;
+}
+
+.dish-revenue-report-table th:last-child {
+    padding-right: 54px;
+    text-align: center;
+}
+
+.dish-revenue-report-table th:nth-child(4) {
+    text-align: right;
+}
+
+.dish-revenue-report-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dish-revenue-report-table tbody tr:hover {
+    background: rgba(22, 22, 22, 0.8);
+}
+
+.dish-revenue-report-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.dish-revenue-report-table td {
+    padding: 24px 36px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+.dish-revenue-report-table td:first-child {
+    padding-left: 54px;
+}
+
+.dish-revenue-report-table td:last-child {
+    padding-right: 54px;
+    text-align: center;
+}
+
+.dish-revenue-report-rank {
+    font-weight: 500;
+    color: rgba(212, 175, 55, 0.9);
+    text-align: center;
+    width: 80px;
+}
+
+.dish-revenue-report-dish-name {
+    font-weight: 400;
+}
+
+.dish-revenue-report-quantity {
+    text-align: center;
+}
+
+.dish-revenue-report-revenue {
+    font-weight: 500;
+    color: rgba(212, 175, 55, 0.9);
+    text-align: right;
+}
+
+.dish-revenue-report-actions {
+    text-align: center;
+}
+
+.dish-revenue-report-action-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.1);
+    color: rgba(212, 175, 55, 0.7);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.dish-revenue-report-action-link:hover {
+    background: rgba(212, 175, 55, 0.2);
+    color: rgba(212, 175, 55, 1);
+    transform: scale(1.1);
+}
+
+.dish-revenue-report-action-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.dish-revenue-report-table tfoot {
+    background: rgba(17, 17, 17, 0.6);
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.dish-revenue-report-summary td {
+    padding: 27px 36px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.dish-revenue-report-summary td:first-child {
+    padding-left: 54px;
+}
+
+.dish-revenue-report-summary-label {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+}
+
+.dish-revenue-report-summary-value {
+    color: rgba(212, 175, 55, 0.9);
+    text-align: right;
+}
+
+/* Responsive Design for Dish Revenue Report Page */
+@media (max-width: 768px) {
+    .dish-revenue-report-section {
+        min-height: 100vh;
+        padding: 1.5rem 0;
+    }
+
+    .dish-revenue-report-container {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+
+    .dish-revenue-report-back-link {
+        font-size: 1.35rem;
+        margin-bottom: 2.25rem;
+    }
+
+    .dish-revenue-report-main-title {
+        font-size: 3.75rem;
+    }
+
+    .dish-revenue-report-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .dish-revenue-report-date-range {
+        font-size: 1.125rem;
+    }
+
+    .dish-revenue-report-title-section {
+        margin-bottom: 4.5rem;
+    }
+
+    .dish-revenue-report-table {
+        font-size: 0.9rem;
+    }
+
+    .dish-revenue-report-table th,
+    .dish-revenue-report-table td {
+        padding: 1.35rem 1.8rem;
+        font-size: 1.35rem;
+    }
+
+    .dish-revenue-report-table th:first-child,
+    .dish-revenue-report-table td:first-child {
+        padding-left: 2.25rem;
+    }
+
+    .dish-revenue-report-table th:last-child,
+    .dish-revenue-report-table td:last-child {
+        padding-right: 2.25rem;
+    }
+}
+
+/* Dish Orders Page Styles */
+.dish-orders-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #000000;
+    overflow: visible;
+    padding: 2rem 0;
+}
+
+.dish-orders-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.dish-orders-title-section {
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.dish-orders-main-title {
+    font-size: 5.25rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.dish-orders-subtitle {
+    font-size: 1.6875rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+.dish-orders-date-range {
+    font-size: 1.5rem;
+    color: rgba(212, 175, 55, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.dish-orders-table-container {
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.dish-orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    border-radius: 21px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dish-orders-table thead {
+    background: rgba(17, 17, 17, 0.8);
+}
+
+.dish-orders-table th {
+    padding: 27px 36px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dish-orders-table th:first-child {
+    padding-left: 54px;
+}
+
+.dish-orders-table th:last-child {
+    padding-right: 54px;
+    text-align: center;
+}
+
+.dish-orders-table th:nth-child(4) {
+    text-align: right;
+}
+
+.dish-orders-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dish-orders-table tbody tr:hover {
+    background: rgba(22, 22, 22, 0.8);
+}
+
+.dish-orders-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.dish-orders-table td {
+    padding: 24px 36px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+.dish-orders-table td:first-child {
+    padding-left: 54px;
+}
+
+.dish-orders-table td:last-child {
+    padding-right: 54px;
+    text-align: center;
+}
+
+.dish-orders-order-id {
+    font-weight: 500;
+    color: rgba(212, 175, 55, 0.9);
+}
+
+.dish-orders-order-date {
+    font-weight: 400;
+}
+
+.dish-orders-quantity {
+    text-align: center;
+}
+
+.dish-orders-revenue {
+    font-weight: 500;
+    color: rgba(212, 175, 55, 0.9);
+    text-align: right;
+}
+
+.dish-orders-actions {
+    text-align: center;
+}
+
+.dish-orders-action-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.1);
+    color: rgba(212, 175, 55, 0.7);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.dish-orders-action-link:hover {
+    background: rgba(212, 175, 55, 0.2);
+    color: rgba(212, 175, 55, 1);
+    transform: scale(1.1);
+}
+
+.dish-orders-action-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.dish-orders-table tfoot {
+    background: rgba(17, 17, 17, 0.6);
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.dish-orders-summary td {
+    padding: 27px 36px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.dish-orders-summary td:first-child {
+    padding-left: 54px;
+}
+
+.dish-orders-summary-label {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+}
+
+.dish-orders-summary-value {
+    color: rgba(212, 175, 55, 0.9);
+    text-align: right;
+}
+
+/* Responsive Design for Dish Orders Page */
+@media (max-width: 768px) {
+    .dish-orders-section {
+        min-height: 100vh;
+        padding: 1.5rem 0;
+    }
+
+    .dish-orders-container {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+
+    .dish-orders-main-title {
+        font-size: 3.75rem;
+    }
+
+    .dish-orders-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .dish-orders-date-range {
+        font-size: 1.125rem;
+    }
+
+    .dish-orders-title-section {
+        margin-bottom: 4.5rem;
+    }
+
+    .dish-orders-table {
+        font-size: 0.9rem;
+    }
+
+    .dish-orders-table th,
+    .dish-orders-table td {
+        padding: 1.35rem 1.8rem;
+        font-size: 1.35rem;
+    }
+
+    .dish-orders-table th:first-child,
+    .dish-orders-table td:first-child {
+        padding-left: 2.25rem;
+    }
+
+    .dish-orders-table th:last-child,
+    .dish-orders-table td:last-child {
+        padding-right: 2.25rem;
+    }
+}
+
+/* Order Detail Page Styles */
+.order-detail-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #000000;
+    overflow: visible;
+    padding: 2rem 0;
+}
+
+.order-detail-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.order-detail-title-section {
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.order-detail-main-title {
+    font-size: 5.25rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.order-detail-subtitle {
+    font-size: 1.6875rem;
+    color: rgba(212, 175, 55, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.order-detail-summary-box {
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 21px;
+    padding: 54px;
+    margin-bottom: 4.5rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-detail-summary-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 54px;
+    margin-bottom: 36px;
+}
+
+.order-detail-summary-row:last-child {
+    margin-bottom: 0;
+}
+
+.order-detail-summary-item {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.order-detail-summary-label {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.order-detail-summary-value {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+}
+
+.order-detail-summary-status {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.order-detail-status-paid {
+    color: #4ade80;
+}
+
+.order-detail-status-pending {
+    color: rgba(212, 175, 55, 0.9);
+}
+
+.order-detail-status-cancelled {
+    color: #ef4444;
+}
+
+.order-detail-summary-total {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(212, 175, 55, 0.9);
+    letter-spacing: 0.02em;
+}
+
+.order-detail-table-container {
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.order-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    border-radius: 21px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.order-detail-table thead {
+    background: rgba(17, 17, 17, 0.8);
+}
+
+.order-detail-table th {
+    padding: 27px 36px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.order-detail-table th:first-child {
+    padding-left: 54px;
+}
+
+.order-detail-table th:last-child {
+    padding-right: 54px;
+    text-align: right;
+}
+
+.order-detail-table th:nth-child(3),
+.order-detail-table th:nth-child(4) {
+    text-align: right;
+}
+
+.order-detail-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.order-detail-table tbody tr:hover {
+    background: rgba(22, 22, 22, 0.8);
+}
+
+.order-detail-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.order-detail-table td {
+    padding: 24px 36px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+.order-detail-table td:first-child {
+    padding-left: 54px;
+}
+
+.order-detail-table td:last-child {
+    padding-right: 54px;
+    text-align: right;
+}
+
+.order-detail-dish-name {
+    font-weight: 400;
+}
+
+.order-detail-quantity {
+    text-align: center;
+}
+
+.order-detail-unit-price {
+    text-align: right;
+}
+
+.order-detail-amount {
+    font-weight: 500;
+    text-align: right;
+}
+
+.order-detail-table tfoot {
+    background: rgba(17, 17, 17, 0.6);
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.order-detail-total-row td {
+    padding: 27px 36px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.order-detail-total-label {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.order-detail-total-value {
+    color: rgba(212, 175, 55, 0.9);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Responsive Design for Order Detail Page */
+@media (max-width: 768px) {
+    .order-detail-section {
+        min-height: 100vh;
+        padding: 1.5rem 0;
+    }
+
+    .order-detail-container {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+
+    .order-detail-main-title {
+        font-size: 3.75rem;
+    }
+
+    .order-detail-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .order-detail-title-section {
+        margin-bottom: 4.5rem;
+    }
+
+    .order-detail-summary-box {
+        padding: 2.25rem;
+    }
+
+    .order-detail-summary-row {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+        margin-bottom: 2.25rem;
+    }
+
+    .order-detail-summary-label {
+        font-size: 1.35rem;
+    }
+
+    .order-detail-summary-value,
+    .order-detail-summary-status,
+    .order-detail-summary-total {
+        font-size: 1.8rem;
+    }
+
+    .order-detail-table {
+        font-size: 0.9rem;
+    }
+
+    .order-detail-table th,
+    .order-detail-table td {
+        padding: 1.35rem 1.8rem;
+        font-size: 1.35rem;
+    }
+
+    .order-detail-table th:first-child,
+    .order-detail-table td:first-child {
+        padding-left: 2.25rem;
+    }
+
+    .order-detail-table th:last-child,
+    .order-detail-table td:last-child {
+        padding-right: 2.25rem;
+    }
+
+    .order-detail-total-value {
+        font-size: 1.8rem;
+    }
+}
+
